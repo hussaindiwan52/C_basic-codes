@@ -1,10 +1,16 @@
 #include <stdio.h>
 int main()
 {
-    int len, num;
-    printf("enter length of number and number ");
-    scanf("%d", &len);
+    int len, num, clone;
+    printf("enter the number ");
     scanf("%d", &num);
+    len=0;
+    clone=num;
+    while (clone>0)
+    {
+        clone=clone/10;
+        len++;
+    }
     int digits[len];
     for (int i = 1; i <= len; i++)
     {
