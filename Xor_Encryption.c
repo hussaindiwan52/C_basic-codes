@@ -13,7 +13,7 @@ int main()
     printf("\nenter decryption key :-");
     scanf("%d",&n);
     for(int i=0;i<50;i++){
-        str[i]=str[i]^decrypt;
+        str[i]=str[i]^n;
     }    
     printf("string after decryption is = %s\n",str);
 
