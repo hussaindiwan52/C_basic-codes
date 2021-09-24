@@ -19,11 +19,11 @@ int main(){
     for (int i = 0; i < 14; i++) {
         root+=(multiplier(0.5,i))/fact(i);
     }
-    printf("sqrt 2 = %Lf",root);
+    printf("sqrt 2 = %Lf\n",root);
     
     int num;
-    long double root=1;
-    printf("enter a number :-");
+    root=1;
+    printf("\nenter a number :- ");
     scanf("%d",&num);
     root= pow(2,0.5*log2(num));
     printf("square root of %d = %Lf",num,root);
