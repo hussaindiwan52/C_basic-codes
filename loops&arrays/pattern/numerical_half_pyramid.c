@@ -38,4 +38,19 @@ int main()
         printf("\n");
     }
     
+     printf("\n");
+    
+    //inverted hollow half pyramid
+    for (int i = 0; i < row; i++) {
+        for (int j = 1; j<=row-i; j++) {
+            if(i==0||j==1||i+j==5){
+                printf("%d ",j+i);
+            }
+            else{
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+    
 }
