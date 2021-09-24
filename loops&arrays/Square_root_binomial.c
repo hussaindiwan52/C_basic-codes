@@ -15,11 +15,17 @@ long double multiplier(float n,int k){
     return ans;
 }
 int main(){
-    int num=1;
     long double root=1;
     for (int i = 0; i < 14; i++) {
         root+=(multiplier(0.5,i))/fact(i);
     }
     printf("sqrt 2 = %Lf",root);
     
+    int num;
+    long double root=1;
+    printf("enter a number :-");
+    scanf("%d",&num);
+    root= pow(2,0.5*log2(num));
+    printf("square root of %d = %Lf",num,root);
+    return 0;
 }
