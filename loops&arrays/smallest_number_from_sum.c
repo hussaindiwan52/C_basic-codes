@@ -10,18 +10,23 @@ int main()
         int nines=0;
         nines=sum/9;
         if(nines!=0){
-            if(nines<digits){
+            if(nines<digits && digits==nines+1){
                 printf("%d",sum%9);
                 sum-=sum%9;
                 digits--;
             }
-            nines=sum/9;
-            sum=sum%9;
-            while(digits-nines!=0){
-                printf("%d",sum);
-                sum=sum/9;
+            else{
+                printf("1");
+                sum--;
                 digits--;
             }
+            nines=sum/9;
+            sum=sum%9;
+            while(digits-nines-1!=0){
+                printf("0");
+                digits--;
+            }
+            printf("%d",sum);
             for (int i = 0; i < nines; i++) {
                 printf("9");
             }
