@@ -5,13 +5,13 @@ int main(){
     scanf("%d",&num2);
     printf("\n");
     int flag=0;
-    if(num2>1000){
+    if(num2>=1000){
         n=num2/1000;
         num2%=1000;
         printf("%d*M ",n);
         flag=1;
     }
-      if(num2>900){
+      if(num2>=900){
         if(flag==1){
             printf(" + ");
         }
@@ -20,7 +20,7 @@ int main(){
         flag=1;
         printf("%d*CM ",n);
     }
-      if(num2>500){
+      if(num2>=500){
         if(flag==1){
             printf(" + ");
         }
@@ -29,7 +29,7 @@ int main(){
         flag=1;
         printf("%d*D ",n);
     }
-      if(num2>400){
+      if(num2>=400){
         if(flag==1){
             printf(" + ");
         }
@@ -38,7 +38,7 @@ int main(){
         flag=1;
         printf("%d*CD ",n);
     }
-      if(num2>100){
+      if(num2>=100){
         if(flag==1){
             printf(" + ");
         }
@@ -47,7 +47,7 @@ int main(){
         flag=1;
         printf("%d*C ",n);
     }
-      if(num2>90){
+      if(num2>=90){
         if(flag==1){
             printf(" + ");
         }
@@ -56,7 +56,7 @@ int main(){
         flag=1;
         printf("%d*XC ",n);
     }
-      if(num2>50){
+      if(num2>=50){
         if(flag==1){
             printf(" + ");
         }
@@ -65,7 +65,7 @@ int main(){
         flag=1;
         printf("%d*L ",n);
     }
-      if(num2>40){
+      if(num2>=40){
         if(flag==1){
             printf(" + ");
         }
@@ -74,7 +74,7 @@ int main(){
         flag=1;
         printf("%d*XL ",n);
     }
-      if(num2>10){
+      if(num2>=10){
         if(flag==1){
             printf(" + ");
         }
@@ -83,7 +83,7 @@ int main(){
         flag=1;
         printf("%d*X ",n);
     }
-      if(num2>9){
+      if(num2>=9){
         if(flag==1){
             printf(" + ");
         }
@@ -92,7 +92,7 @@ int main(){
         flag=1;
         printf("%d*IX ",n);
     }
-      if(num2>5){
+      if(num2>=5){
         if(flag==1){
             printf(" + ");
         }
@@ -101,7 +101,7 @@ int main(){
         flag=1;
         printf("%d*V ",n);
     }
-      if(num2>4){
+      if(num2>=4){
         if(flag==1){
             printf(" + ");
         }
@@ -110,7 +110,7 @@ int main(){
         flag=1;
         printf("%d*IV ",n);
     }
-      if(num2>1){
+      if(num2>=1){
         if(flag==1){
             printf(" + ");
         }
