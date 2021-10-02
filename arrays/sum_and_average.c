@@ -13,6 +13,6 @@ int main()
         sum+=arr[i];
     }
     float avg=(sum/n);
-    printf("%d %d %f",sum,n,avg);
+    printf("sum of all elements = %d\naverage of all elements= %f",sum,n,avg);
     return 0;
 }
