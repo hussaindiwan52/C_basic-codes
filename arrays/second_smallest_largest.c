@@ -23,6 +23,8 @@ int main()
     for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
     }
+    printf("\nsmallest = %d",arr[0]);
     printf("\nsecond smallest = %d",arr[1]);
     printf("\nsecond largest = %d",arr[n-2]);
+    printf("\nlargest = %d",arr[n-1]);
 }
