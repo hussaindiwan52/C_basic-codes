@@ -10,18 +10,17 @@ int main()
         printf("\nenter %d element :-",i);
         scanf("%d",&arr[i]);
     }
-    int f_largest=arr[0];
-    int s_largest=arr[0];
-    for (int i = 1; i < n; i++) {
-        if(arr[i]>f_largest){
-            s_largest=f_largest;
-            f_largest=arr[i];
-        }
-        if(arr[i]>s_largest&&arr[i]<f_largest){
-            s_largest=arr[i];
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[i]>=arr[j]){
+                int temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+                
+            }
         }
     }
-    printf("\nsecond largest element= %d\nlargest element= %d",s_largest,f_largest);
+    printf("\nsecond largest element= %d\nlargest element= %d",arr[n-1],arr[n-2]);
     
     return 0;
 }
