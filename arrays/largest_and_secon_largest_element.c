@@ -17,7 +17,7 @@ int main()
             s_largest=f_largest;
             f_largest=arr[i];
         }
-        if(arr[i]>s_largest&&arr[i]<s_largest){
+        if(arr[i]>s_largest&&arr[i]<f_largest){
             s_largest=arr[i];
         }
     }
