@@ -3,13 +3,13 @@
 int main()
 {
     int n;
-    printf("enter size of first array\n");
+    printf("enter size of array\n");
     scanf("%d",&n);
     int arr[n];
     int freq[n];
 
     for(int i=0;i<n;i++){
-        printf("enter %d element in first array :- ",i);
+        printf("enter %d element in array :- ",i);
         scanf("%d",&arr[i]);
         freq[i]=1;
     }
