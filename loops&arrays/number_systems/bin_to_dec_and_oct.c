@@ -9,7 +9,7 @@ int main()
         placeval*=2;
         bin/=10;
     }
-    printf("%d\n",num_dec);
+    printf("decimal = %d\n",num_dec);
     int arr[12];
     for (int i = 0; i < 12; i++) {
         arr[i]=0;
@@ -20,6 +20,7 @@ int main()
         num_dec/=8;
         i++;
     }
+    printf("octal = ");
     for (int i = 11; i >=0; i--) {
         printf("%d",arr[i]);
     }
