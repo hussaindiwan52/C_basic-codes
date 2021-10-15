@@ -3,6 +3,7 @@
 int main()
 {
     int oct,num_dec=0,bin=0,placeval=1;
+    printf("octal = ");
     scanf("%d",&oct);
     while(oct!=0){
         num_dec+=((oct%10)*placeval);
