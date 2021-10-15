@@ -15,8 +15,9 @@ int main()
         num/=8;
         i++;
     }
+    printf("octal = ");
     for (int i = 11; i >=0; i--) {
-        printf("binary = %d",arr[i]);
+        printf("%d",arr[i]);
     }
     return 0;
 }
