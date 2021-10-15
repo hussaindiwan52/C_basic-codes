@@ -3,6 +3,7 @@
 int main()
 {
     int bin,num_dec=0,placeval=1;
+    printf("bin = ");
     scanf("%d",&bin);
     while(bin!=0){
         num_dec+=((bin%10)*placeval);
