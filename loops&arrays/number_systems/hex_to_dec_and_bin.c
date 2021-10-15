@@ -3,6 +3,7 @@
 int main()
 {
     char hex[9];
+    printf("hexadecimal = ");
     scanf("%s",hex);
     int dec=0,flag=0,placeval=1;
     for (int i = 8; i >=0; i--) {
@@ -20,7 +21,24 @@ int main()
             }
         }
     }
-    printf("%d",dec);
+    printf("decimal = %d\n",dec);
+    
+    int bin=0;
+    int arr[32];
+    for (int i = 0; i < 32; i++) {
+        arr[i]=0;
+    }
+    int i=0;
+    while(dec!=0){
+        arr[i]=dec%2;
+        dec/=2;
+        i++;
+    }
+    for (int i = 31; i >=0; i--) {
+        bin*=10;
+        bin+=arr[i];
+    }
+    printf("binary = %d",bin);
     
     return 0;
 }
