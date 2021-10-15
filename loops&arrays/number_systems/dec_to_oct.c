@@ -4,6 +4,7 @@ int main()
 {
     int num;
     int arr[12];
+    printf("decimal = ");
     scanf("%d",&num);
     for (int i = 0; i < 12; i++) {
         arr[i]=0;
@@ -15,7 +16,7 @@ int main()
         i++;
     }
     for (int i = 11; i >=0; i--) {
-        printf("%d",arr[i]);
+        printf("binary = %d",arr[i]);
     }
     return 0;
 }
