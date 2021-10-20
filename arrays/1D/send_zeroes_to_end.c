@@ -10,11 +10,11 @@ int main()
         printf("enter %d element in array :- ",i);
         scanf("%d",&arr[i]);
     }
-    int end=0;
-    for (int i = 0; i < n-end; i++) {
+    int zero_place=0;
+    for (int i = 0; i < n-zero_place; i++) {
         if(arr[i]==0){
             temp=arr[i];
-            end++;
+            zero_place++;
             for(int j= i;j<n-1;j++){
                 arr[j]=arr[j+1];
             }
