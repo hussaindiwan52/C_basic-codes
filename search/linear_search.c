@@ -20,6 +20,7 @@ int main()
         if(element==arr[i]){
             printf("element found at %d index",i);
             flag=0;
+            break;
         }
     }
     
