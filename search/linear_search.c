@@ -13,7 +13,7 @@ int main()
     
     int element;
     int flag=1;
-    printf("enter element to be found :- ")
+    printf("enter element to be found :- ");
     scanf("%d",&element);
     
     for (int i = 0; i < n; i++) {
